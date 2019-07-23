@@ -38,6 +38,9 @@ passport.use("form2",new newstrategy({
     if (!emailsin ){
         return done(null,false,req.flash("messageentrada","the user not exist"));
     }
+    /*if(emailsin = 0){
+        return done(null,false,req.flash("messageentrada","insert a email pliss"))
+    }*/
     if(!emailsin.desencryptpassword(password)){
         return done(null,false,req.flash("messageentrada","the password is not correct"))
     }
