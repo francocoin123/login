@@ -10,9 +10,9 @@
     crossorigin="anonymous">
 </head>
 <body>
-        <% if (singupmensage){%>
-            <div><%= singupmensage%></div>
+        <% if (singupmensage.length > 0){%>
+            <div class="alert alert-danger"><%= singupmensage%></div>
         <% } %>
-        <% if (singentrada){%>
-            <div><%= singentrada%></div>
+        <% if (singentrada.length > 0){%>
+            <div class="alert alert-danger"><%= singentrada%></div>
         <% } %> 
